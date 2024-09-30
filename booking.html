@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="site.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <div class="top-strip">
+    <p>Living the Dream</p>
+  </div>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="error"></div>
+    <div class="book">
+      <h3>Want to book? Fill in the form below!</h3>
+      <form id="myForm">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div>
+            <label>
+              Full Name<span class="required">*</span><br>
+              <input type="text" id="fname" name="fname" class="form-input" required>
+            </label><br>
+          </div>
+          <div>
+            <label>
+              Phone Number<span class="required">*</span><br>
+              <input type="text" id="phone" name="phone" class="form-input">
+            </label>
+          </div>
+          <div>
+            <label>
+              Email<span class="required">*</span><br>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Travel Details</legend>
+          <div>
+            <label>
+              No of Adults<br>
+              <input type="number" id="adults" name="adults" class="form-input">
+            </label>
+          </div>
+          <div>
+            <label>
+              No of Children<br>
+              <input type="children" id="children" name="children" class="form-input">
+            </label>
+          </div>
+          <div>
+            <label>
+              Departure Date:<span class="required">*</span><br>
+              <input type="date" id="ddate" name="ddate" class="form-input">
+            </label>
+          </div>
+          <div>
+            <label>
+              Return Date:<span class="required">*</span><br>
+              <input type="date" id="rdate" name="rdate" class="form-input">
+            </label>
+          </div>
+          <div>
+            <label>
+              Accomodation preference<br>
+              <select>
+                <option name="accomodation" values="hotel">Hotel</option>
+                <option name="accomodation" values="resort">Resort</option>
+              </select>
+            </label>
+          </div>
+          <div>
+            <label>
+              Travel preference<br>
+              <select>
+                <option name="travel" values="flight">Flight</option>
+                <option name="travel" values="bus">Bus</option>
+                <option name="travel" values="train">Train</option>
+                <option name="travel" values="cab">Cab</option>
+              </select>
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
